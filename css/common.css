@@ -1,0 +1,26 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 400;
+    src: url(NanumSquareR.eot);
+    src: local('☺'),
+         url(NanumSquareR.eot?#iefix) format('embedded-opentype'),
+         url(NanumSquareR.woff) format('woff'),
+         url(NanumSquareR.ttf) format('truetype');
+   }
+  
+
+*{padding: 0; margin: 0;}
+body{width:1920px; font-family: 'NanumSquare';}
+a{color: inherit; text-decoration: none;}
+ul,li,ol{list-style-type: none;}
+hr{border: 0; clear: both;}
+
+#wrap {
+    width: 100%;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}

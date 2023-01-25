@@ -1,0 +1,291 @@
+
+@charset "utf-8";
+
+#sec05{
+    background-color: #0c1013;
+    padding-top: 50px;
+    height: 850px;
+}
+
+.sec05 .arr{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.sec05 .arr a{
+    font-size: 40px;
+}
+
+.sec05 .arr p{
+    font-size: 21px;
+}
+.sec05>.txt{color:#00ffea;}
+
+.sec05 .schedule{
+    margin-top: 50px;
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.sec05 .schedule .day{
+    font-weight: bold;
+    font-size: 14px;
+    text-align: right;
+    margin-right: 15px;
+    margin-bottom: 14px;
+    transition: all 0.3s;
+}
+
+.sec05 .schedule .icon-orange{
+    background-color: orange;
+    border-radius: 50px;
+    width: 5px;
+    height: 5px;
+  margin-right: 7px;
+}
+
+.sec05 .schedule .icon-blue{
+    background-color: royalblue;
+    border-radius: 50px;
+    width: 5px;
+    height: 5px;
+    margin-right: 7px;
+}
+
+
+.sec05 .txt h2{
+  font-size: 35px;
+}
+
+.sec05 .txt>p{
+    font-size: 12px;
+}
+
+.sec05 .schedule .txt>div{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.sec05 .schedule .line01{
+    border-bottom: 1px solid white;
+    height: 110px;
+    width: 100%;
+    display: flex;
+}
+
+.sec05 .schedule .line01>div{
+    
+    width: calc(100% / 7);
+    height: 100%;
+    padding-top: 15px;
+    padding-left: 20px;
+    box-sizing: border-box;
+
+}
+
+
+.sec05 .schedule .line01 .txt{
+    font-size: 13px;
+
+}
+
+
+.sec05 .schedule .line02{
+    border-bottom: 1px solid white;
+    height: 110px;
+    width: 100%;
+    display: flex;
+}
+
+.sec05 .schedule .line02>div{
+    
+    width: calc(100% / 7);
+    height: 100%;
+    padding-top: 15px;
+    padding-left: 20px;
+    box-sizing: border-box;
+
+}
+
+
+.sec05 .schedule .line02 .txt{
+    font-size: 13px;
+
+}
+
+
+.sec05 .schedule .line03{
+    border-bottom: 1px solid white;
+    height: 110px;
+    width: 100%;
+    display: flex;
+}
+
+.sec05 .schedule .line03>div{
+    
+    width: calc(100% / 7);
+    height: 100%;
+    padding-top: 15px;
+    padding-left: 20px;
+    box-sizing: border-box;
+
+}
+
+
+.sec05 .schedule .line03 .txt{
+    font-size: 13px;
+
+}
+
+
+.sec05 .schedule .line04{
+    border-bottom: 1px solid white;
+    height: 110px;
+    width: 100%;
+    display: flex;
+}
+
+.sec05 .schedule .line04>div{
+    
+    width: calc(100% / 7);
+    height: 100%;
+    padding-top: 15px;
+    padding-left: 20px;
+    box-sizing: border-box;
+
+}
+
+
+.sec05 .schedule .line04 .txt{
+    font-size: 13px;
+
+}
+
+
+.sec05 .schedule .line05{
+    border-bottom: 1px solid white;
+    height: 110px;
+    width: 100%;
+    display: flex;
+}
+
+.sec05 .schedule .line05>div{
+    
+    width: calc(100% / 7);
+    height: 100%;
+    padding-top: 15px;
+    padding-left: 20px;
+    box-sizing: border-box;
+
+}
+
+
+.sec05 .schedule .line05 .txt{
+    font-size: 13px;
+
+}
+
+.sec05 .schedule .line01 .gray-day{
+    color: rgb(71, 71, 71);
+    font-weight: bold;
+    font-size: 14px;
+    text-align: right;
+    margin-right: 15px;
+    margin-bottom: 14px;
+}
+
+
+.sec05 .schedule .line05 .gray-day{
+    color: rgb(71, 71, 71);
+    font-weight: bold;
+    font-size: 14px;
+    text-align: right;
+    margin-right: 15px;
+    margin-bottom: 14px;
+}
+
+
+.sec05 .schedule div p{
+    color: #00d3d0;
+}
+
+.sec05 .schedule div .txt p{
+    color: white;
+}
+
+
+.schedule .line01>div{
+    border: 4px solid transparent;
+    transition: all 0.3s;
+}
+.schedule .line01>div:hover{
+    border: 4px solid #00d3d0;
+}
+
+.schedule .line01>div:hover .day{
+   color: rgb(255, 0, 68);
+ 
+}
+
+
+
+.schedule .line02>div{
+    border: 4px solid transparent;
+    transition: all 0.3s;
+}
+.schedule .line02>div:hover{
+    border: 4px solid #00d3d0;
+}
+
+.schedule .line02>div:hover .day{
+   color: rgb(255, 0, 68);
+ 
+}
+
+.schedule .line03>div{
+    border: 4px solid transparent;
+    transition: all 0.3s;
+}
+.schedule .line03>div:hover{
+    border: 4px solid #00d3d0;
+}
+
+.schedule .line03>div:hover .day{
+   color: rgb(255, 0, 68);
+ 
+}
+
+.schedule .line04>div{
+    border: 4px solid transparent;
+    transition: all 0.3s;
+}
+.schedule .line04>div:hover{
+    border: 4px solid #00d3d0;
+}
+
+.schedule .line04>div:hover .day{
+   color: rgb(255, 0, 68);
+ 
+}
+
+.schedule .line05>div{
+    border: 4px solid transparent;
+    transition: all 0.3s;
+}
+.schedule .line05>div:hover{
+    border: 4px solid #00d3d0;
+}
+
+.schedule .line05>div:hover .day{
+   color: rgb(255, 0, 68);
+ 
+}

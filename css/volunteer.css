@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+#sec04 {
+    width: 100%;
+    height: 1350px;
+    position: relative;
+    margin-top: 300px;
+}
+
+
+#sec04 .sec04-txt{
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+#sec04 .sec04-txt>p {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #00d3d0;
+    font-weight: bold;
+}
+
+#sec04 .sec04-txt>h3 {
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+
+
+
+.sec04-bg {
+    width: 100%;
+    height: 1050px;
+    background-image: url(../images/video_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.sec04 {
+    position: absolute;
+    width: 100%;
+    height: 885px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+.sec04 .girl {
+    position: absolute;
+    bottom: -100px;
+    right: -50px;
+    background-image: url(../images/video_bg3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 502px;
+    z-index: 3;
+}
+
+.sec04 .leeves {
+    position: absolute;
+    bottom: 100px;
+    left: -90px;
+    background-image: url(../images/video_bg4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 212px;
+    height: 318px;
+    z-index: 3;
+}
+
+
+
+
+
+.bg-img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 1180px;
+    height: 925px;
+    background-image: url(../images/video_bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    z-index: 1;
+
+}
+
+.sec04 .bg-img>p {
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color:#3d8bae
+}
+
+#player-video {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%, 0);
+}
+
+
+
+
+
+
+
+
+/* video line */
+
+
+
+
+#sec04 .sec04 .video .start-btn button {
+    display: block;
+
+    width: 120px;
+    height: 120px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 5;
+    background: url(../images/video-btn.png) center no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    border: 0;
+    transition: all 0.2s;
+}
+
+#sec04 .sec04 .video .start-btn button:hover{
+    width: 150px;
+    height: 150px;
+}
+
+
+
+
+
+
+
+

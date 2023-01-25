@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>열배여</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/stlye.css">
+    <link rel="stylesheet" href="./css/schedule.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/volunteer.css">
+    <link rel="stylesheet" href="./css/curation.css">
+    <link rel="stylesheet" href="./css/mountain.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_package/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_package/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_package/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon_package/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/44c2b55412.js" crossorigin="anonymous"></script>
+    <script src="./js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-1.12.3.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
+    <script src="./js/nav.js"></script>
+    <script>
+        $(function () {
+            $('.bx-Slider').bxSlider({
+                mode: 'horizontal',
+                sideWidth: 1200,
+                moveSlides: 1,
+                maxSlides: 4,
+                minSlides: 4
+            });
+
+            //scroll-event
+            $(window).scroll(function () {
+                var location = $(this).scrollTop()
+                if (location >= $('#sec03').offset().top + 400) {
+                    $('.book-long-bn').fadeIn()
+                } else {
+                    $('.book-long-bn').fadeOut()
+                }
+
+            })
+        })
+    </script>
+    <style>
+        /* .book-long-bn{
+        display: none;
+    } */
+        .book-long-bn.on {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fix-nav">
+        <div class="main">
+            <div class="main-g one"><a href="#n"><img src="./images/fixed/gray/main.png" alt=""></a></div>
+            <div class="main-c two"><a href="#n"><img src="./images/fixed/main.png" alt=""></a></div>
+        </div>
+
+        <div class="passion">
+            <div class="passion-g one"><a href="#n"><img src="./images/fixed/gray/passion.png" alt=""></a></div>
+            <div class="passion-c two"><a href="#n"><img src="./images/fixed/passion.png" alt=""></a></div>
+        </div>
+
+        <div class="learning">
+            <div class="learning-g one"><a href="#n"><img src="./images/fixed/gray/learning.png" alt=""></a></div>
+            <div class="learning-c two"><a href="#n"><img src="./images/fixed/learning.png" alt=""></a></div>
+        </div>
+
+        <div class="volunteer">
+            <div class="volunteer-g one"><a href="#n"><img src="./images/fixed/gray/volunteer.png" alt=""></a></div>
+            <div class="volunteer-c two"><a href="#n"><img src="./images/fixed/volunteer.png" alt=""></a></div>
+        </div>
+
+
+        <div class="schedule">
+            <div class="schedule-g one"><a href="#n"><img src="./images/fixed/gray/schedule.png" alt=""></a></div>
+            <div class="schedule-c two"><a href="#n"><img src="./images/fixed/schedule.png" alt=""></a></div>
+        </div>
+    </div>
+
+
+
+    <div id="wrap">
+
+       
+            <div id="mvisual">
+                <div class="video_wrap">
+                    <video autoplay muted loop poster="./images/video/03.png">
+                    <source src="./images/video/final.mp4" type="video/mp4"></video>
+        
+                </div>
+            </div>
+      
+
+        <div class="inner">
+            <header>
+
+                <nav id="main">
+                    <a href="#" class="logo-c"></a>
+                    <ul>
+                        <li>
+                            <a href="#n">열배여 소개</a>
+
+                            <div class="sub-m">
+                                <a href="#n">열배여 소개
+                                    <div class="move"></div>
+                                </a>
+                                <a href="#n" class="ra">CI소개
+                                    <div class="move"></div>
+                                </a>
+                            </div>
+
+                        </li>
+
+                        <li>
+                            <a href="#n">프로그램 안내</a>
+                            <div class="sub-m">
+                                <a href="#n">PASSION:열정
+                                    <div class="move"></div>
+                                </a>
+                                
+                                <a href="#n" class="no-ra">LEARNING:배움
+                                    <div class="move"></div>
+                                </a>
+                                <a href="#n" class="ra">VOLUNTEER:봉사
+                                    <div class="move"></div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#n">참여CHECK</a>
+                            <div class="sub-m">
+                                <a href="#n">행사신청
+                                    <div class="move"></div>
+                                </a>
+                                <a href="#n" class="ra">신청조회
+                                    <div class="move"></div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#n">나DO나DO</a>
+                            <div class="sub-m">
+                                <a href="#n"></a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#n">소통마당</a>
+                            <div class="sub-m">
+                                <a href="#n">공지사항
+                                    <div class="move"></div>
+                                </a>
+                                <a href="#n" class="no-ra">참여후기
+                                    <div class="move"></div>
+                                </a>
+                                <a href="#n" class="ra">갤러리
+                                    <div class="move"></div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#n">행사일정</a>
+                            <div class="sub-m">
+                                <a href="#n">전체스케쥴
+                                    <div class="move"></div>
+                                </a>
+                                <a href="#n" class="ra">지난행사 보기
+                                    <div class="move"></div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="icon">
+                        <a href="#n" class="mypage"></a>
+                        <a href="#n" class="menu"></a>
+                    </div>
+                </nav>
+
+            </header>
+
+            <div id="passion">
+                <section class="sec01-title">
+                    <p>PASSION</p>
+                    <h3>운동 프로그램 일정</h3>
+                </section>
+
+
+                <section class="sec01">
+                    <div class="bx-Slider">
+                        <a href="#n"><img src="./images/bxslide_bnr/01.png" alt=""></a>
+                        <a href="#n"><img src="./images/bxslide_bnr/02.png" alt=""></a>
+                        <a href="#n"><img src="./images/bxslide_bnr/03.png" alt=""></a>
+                        <a href="#n"><img src="./images/bxslide_bnr/04.png" alt=""></a>
+                        <a href="#n"><img src="./images/bxslide_bnr/01.png" alt=""></a>
+                        <a href="#n"><img src="./images/bxslide_bnr/02.png" alt=""></a>
+                        <a href="#n"><img src="./images/bxslide_bnr/03.png" alt=""></a>
+                        <a href="#n"><img src="./images/bxslide_bnr/04.png" alt=""></a>
+
+                    </div>
+            </div>
+            <!-- <a href="#n" class="arr-left"><img src="" alt=""></a>
+
+                    <div class="slide-group">
+                        <a href="#n">
+                            <div class="slide01">
+                                <div class="txt">
+                                    <p class="place">사하구</p>
+                                    <p class>
+                                        2022 8월 월/수/금 인터벌 런닝</p>
+
+                                    <div class="under-txt">
+                                        <p class="icon"></p>
+                                        <p class="gray">2022 매주 월/수/금</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#n">
+                            <div class="slide02">
+                                <div class="txt">
+                                    <p class="place">을숙도</p>
+                                    <p>철새도래지 을숙도 플로깅</p>
+                                    <div class="under-txt">
+                                        <p class="icon"></p>
+                                        <p class="gray">2022-08-20</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#n">
+                            <div class="slide03">
+                                <div class="txt">
+                                    <p class="place">남포동</p>
+                                    <p class="title">제 1회 닭가슴살 치믈리에 선발전</p>
+                                    <div class="under-txt">
+                                        <p class="icon"></p>
+                                        <p class="gray">2022-08-21</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#n">
+                            <div class="slide04">
+
+                                <div class="txt">
+                                    <p class="place">을숙도</p>
+                                    <p class="title">2022 8월 매주 주말 배드민턴</p>
+                                    <div class="under-txt">
+                                        <p class="icon"></p>
+                                        <p class="gray">2022 매주 주말</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <a href="#n" class="arr-right"><img src="" alt=""></a>
+                </div> -->
+
+
+            <div class="mini-schedule"> </div>
+            </section>
+        </div>
+
+        <div id="sec02">
+            <section class="sec02 inner">
+                <div class="txt-box">
+                    <h1>
+                        아직 <br>
+                        등산이 <br>
+                        어려운 <br>
+                        당신을 위한 <br>
+                    </h1>
+                    <h2>
+                        <span>쉽고 재미있는</span> <br>
+                        영상으로 배워요 <br>
+                    </h2>
+                    <p>
+                        영남알프스<br>
+                        9봉 완봉한 분들의 조언과 <br>
+                    </p>
+                    <p>
+                        블랙야크 100대 명산을<br>
+                        완봉한 분들의 솔직담백 이야기 <br>
+                    </p>
+                </div>
+                <div class="img-box">
+                    <a href="#n">
+                        <div class="m-img1"></div>
+                    </a>
+                    <a href="#n">
+                        <div class="m-img2"></div>
+                    </a>
+                </div>
+
+            </section>
+        </div>
+
+        <div id="sec03">
+            <section class="sec03">
+                <div class="sec03-txt">
+                    <p>LEARNING</p>
+                    <h3>책이야기 큐레이션</h3>
+                </div>
+                <div class="main-bnr"></div>
+
+                <div class="menu-slide">
+                    <div class="curation-menu">
+                        <div class="title-img"></div>
+
+                    </div>
+                    <div class="sec03-nav">
+                        <nav>
+                            <div class="nav-left">
+                                <div class="nav01 on">
+                                    <a href="#n">오늘의 추천도서</a>
+                                </div>
+                                <div class="nav02">
+                                    <a href="#n"> 특화 주제 자료</a>
+                                </div>
+                                <div class="nav03">
+                                    <a href="#n">오디오북</a>
+                                </div>
+                            </div>
+
+                            <!-- <div class="nav-right">
+                                <a href="#n"><i class="fa-solid fa-angle-left"></i></a>
+                                &nbsp;  
+                                <a href="#n"><i class="fa-solid fa-angle-right"></i></a>
+                                &nbsp;  
+                                
+                            </div> -->
+                        </nav>
+                    </div>
+                    <div class="book-menu1 ">
+                        <div class="book01">
+                            <div class="book-hover1">
+                                <p>동물 너머 : 얽힘·고통· <br>타자에 대한 열개의 물음 </p>
+                                <div class="opacity-box"></div>
+                            </div>
+                        </div>
+                        <div class="book02">
+                            <div class="book-hover2">
+                                <p>헌법의 탄생 : 국가의 헌법은 <br>어떻게 만들어지는가 </p>
+                                <div class="opacity-box"></div>
+                            </div>
+                        </div>
+                        <div class="book03">
+                            <div class="book-hover3">
+                                <p>메타버스를 디자인하라 : <br>UX FOR XR</p>
+                                <div class="opacity-box"></div>
+                            </div>
+                        </div>
+                        <div class="book04">
+                            <div class="book-hover4">
+                                <p>THE ADDRESS BOOX : <br>주소이야기</p>
+                                <div class="opacity-box"></div>
+                            </div>
+                        </div>
+                        <div class="book05">
+                            <div class="book-hover5">
+                                <p>THE FUTURE OF POWER : <br>권력의 미래</p>
+                                <div class="opacity-box"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-menu2">
+                        <div class="book01">
+                            <div class="book-hover1">
+                                <p>동물 너머 : 얽힘·고통· <br>타자에 대한 열개의 물음 </p>
+                                <div class="opacity-box"></div>
+                            </div>
+                        </div>
+                        <div class="book02">
+                            <div class="book-hover2">
+                                <p>헌법의 탄생 : 국가의 헌법은 <br>어떻게 만들어지는가 </p>
+                                <div class="opacity-box"></div>
+                            </div>
+                        </div>
+                        <div class="book03">
+                            <div class="book-hover3">
+                                <p>메타버스를 디자인하라 : <br>UX FOR XR</p>
+                                <div class="opacity-box"></div>
+                            </div>
+                        </div>
+                        <div class="book04">
+                            <div class="book-hover4">
+                                <p>THE ADDRESS BOOX : <br>주소이야기</p>
+                                <div class="opacity-box"></div>
+                            </div>
+                        </div>
+                        <div class="book05">
+                            <div class="book-hover5">
+                                <p>THE FUTURE OF POWER : <br>권력의 미래</p>
+                                <div class="opacity-box"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-menu3">
+                        <div class="book01">
+                            <div class="book-hover1">
+                                <p>동물 너머 : 얽힘·고통· <br>타자에 대한 열개의 물음 </p>
+                                <div class="opacity-box"></div>
+                            </div>
+                        </div>
+                        <div class="book02">
+                            <div class="book-hover2">
+                                <p>헌법의 탄생 : 국가의 헌법은 <br>어떻게 만들어지는가 </p>
+                                <div class="opacity-box"></div>
+                            </div>
+                        </div>
+                        <div class="book03">
+                            <div class="book-hover3">
+                                <p>메타버스를 디자인하라 : <br>UX FOR XR</p>
+                                <div class="opacity-box"></div>
+                            </div>
+                        </div>
+                        <div class="book04">
+                            <div class="book-hover4">
+                                <p>THE ADDRESS BOOX : <br>주소이야기</p>
+                                <div class="opacity-box"></div>
+                            </div>
+                        </div>
+                        <div class="book05">
+                            <div class="book-hover5">
+                                <p>THE FUTURE OF POWER : <br>권력의 미래</p>
+                                <div class="opacity-box"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec03-bg-img"></div>
+            </section>
+        </div>
+
+
+        <div class="book-long-bn"><a href="#n"><img src="./images/book-long-bnr.png" alt="book-long-bnr"></a></div>
+
+        <div id="sec04">
+
+            <div class="sec04-bg"></div>
+            <div class="sec04-txt inner">
+                <p>VOLUNTEER</p>
+                <h3>환경&봉사활동</h3>
+            </div>
+            <section class="sec04 inner">
+                <div class="girl"></div>
+                <div class="leeves"></div>
+                <div class="video">
+
+                    <div class="start-btn">
+                        <button type="button"><span class="skip"></span></button>
+                    </div>
+                    <!-- <div class="stop_btn">
+                        <button type="button">
+                            <span class="skip">비디오 정지</span>
+                        </button>
+                    </div> -->
+                    <video src="./images/video/KakaoTalk_20220729_093225415.mp4" poster="./images/video_img.png"
+                        id="player-video" muted>
+                    </video>
+                </div>
+                <div class="bg-img">
+                    <P>제 1회 승학산 플로깅 영상</P>
+                </div>
+        </div>
+
+        </section>
+    </div>
+
+
+    <div id="sec05">
+        <section class="sec05 inner">
+            <div class="txt">
+                <div class="arr">
+                    <a href="#n">
+                    </a>
+                    <p>AUG8</p>
+                    <a href="#n">></a>
+                </div>
+                <h2>PROGRAM SCHEDULE</h2>
+                <P>지금,열배여에서 만날 수 있는 프로그램을 확인해보세요!</P>
+            </div>
+
+            <div class="schedule">
+                <div class="line01">
+                    <div>
+                        <a href="#n">
+                            <p class="gray-day">SUN31</p>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">MON01</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">TUE02</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">WED03</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">THU04</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">FRI05</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">SAT06</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="line02">
+                    <div>
+                        <a href="#n">
+                            <p class="day">07</p>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">08</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">09</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">10</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">11</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">12</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">13</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="line03">
+                    <div>
+                        <a href="#n">
+                            <p class="day">14</p>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">15</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">16</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">17</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">18</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">19</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">20</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="line04">
+                    <div>
+                        <a href="#n">
+                            <p class="day">21</p>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">22</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">23</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">24</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">25</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">26</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">27</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="line05">
+                    <div>
+                        <a href="#n">
+                            <p class="day">28</p>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">29</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">30</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="day">31</p>
+                            <div class="txt">
+                                <div>
+                                    <div class="icon-orange"></div>
+                                    <p>인터벌 런닝</p>
+                                </div>
+                                <div>
+                                    <div class="icon-blue"></div>
+                                    <p>심야헬스</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="gray-day">8/1</p>
+
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="#n">
+                            <p class="gray-day">02</p>
+
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#n">
+                            <p class="gray-day">03</p>
+
+                        </a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+    </div>
+
+
+    <footer>
+        <div class="txt-cont inner">
+            <h1 class="logo-w"></h1>
+            <div class="top-txt">
+                <p><a href="#n">개인정보처리방침</a></p>
+                <p><a href="#n">저작권정책</a></p>
+                <p><a href="#n">사이트맵</a></p>
+                <p class="none"><a href="#n">찾아오시는길</a></p>
+            </div>
+            <div class="bottom-txt">
+                <P>[(우)00000] 부산광역시 사하구 00로 00번길
+                    &nbsp; TEL:010-555-5555</P>
+                <P class="none">copyright 2022.BUSAN SAHA-GU ALL RIGHT REDERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    </div>
+
+</body>
+
+</html>

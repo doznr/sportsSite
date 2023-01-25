@@ -1,0 +1,133 @@
+@charset "utf-8";
+body{
+    background-color: white;
+}
+.wrap {
+    width: 100%;
+}
+
+header {
+    background-color: transparent;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+
+header.on{
+    width: 90%;
+    left: 50%;
+    /* fixed때문에 margin 0 auto; 안먹힘 */
+    transform: translateX(-50%);
+    top: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(184, 85, 85);
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    width: 120px;
+    margin: 0 20px;
+}
+
+section{
+    height: 100vh;
+}
+
+.Section01{background-color: rgb(236, 215, 255);}
+.Section02{background-color: rgb(207, 156, 255);}
+.Section03{background-color: rgb(167, 73, 255);}
+.Section04{background-color: rgb(132, 0, 255);}
+
+.Section03{
+    padding: 300px 100px;
+    box-sizing: border-box;
+    /* 패딩이랑 볼더 할 때 이거 넣기 */
+    overflow: hidden;
+}
+
+
+.Section03 h3{
+    font-size: 5em;
+    /* 원본 폰트의 배수 */
+    transform: translateX(-300px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+
+.Section03 p{
+    font-size: 2em;
+    transform: translateX(300px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+
+
+.Section03.on h3,
+.Section03.on p{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.Section04.on{
+    background-color: aquamarine;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.q-menu{
+    color: white;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    transform: translate(0,-50%);
+    background-color: brown;
+    border-radius: 50px;
+    display: none;
+}
+
+b{
+    position: fixed;
+    top: 50%;
+    left: 50px;
+    transform: translate(0,-50%);
+    width: 150px;
+    line-height: 30px;
+    background-color: aquamarine;
+   padding-left: 20px;
+  
+}

@@ -1,0 +1,99 @@
+@charset "utf-8";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@font-face {
+    font-family: 'EF_WAKEUP';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/EF_WAKEUP.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+.sec02 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.img-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 750px;
+    height: 1050px;
+
+}
+
+.m-img1 {
+    background-image: url(../images/mountain1.png);
+    width: 480px;
+    height: 686px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 180px;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.m-img1:hover{
+    width: 600px;
+    height: 800px;
+    z-index: 100;
+}
+
+
+
+.m-img2 {
+    background-image: url(../images/mountain2.png);
+    width: 390px;
+    height: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 200px;
+    right: -120px;
+    transition: all 0.5s;
+}
+
+.m-img2:hover{
+    width: 520px;
+    height: 720px;
+}
+
+.txt-box {
+    padding-top: 200px;
+}
+
+.txt-box>h1,
+.txt-box>h2 {
+    font-family: 'EF_WAKEUP';
+    font-weight: 400;
+   
+}
+
+.txt-box>h1 {
+    padding-bottom: 30px;
+    font-size: 80px;
+
+}
+
+.txt-box>h2 {
+    font-size: 25px;
+    padding-bottom: 45px;
+
+}
+.txt-box>h2>span{
+    color: #498159;
+}
+ .txt-box>p {
+    font-size: 12px;
+    padding-bottom: 10px;
+    font-family: 'NanumSquare';
+}
+
+
+

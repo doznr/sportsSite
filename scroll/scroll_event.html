@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="./scroll_event.css">
+    <title>scroll</title>
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                var location = $(this).scrollTop().toFixed(0) //<<.toFixed는 소숫점 고정(없애)시켜주는거
+                //   var=변수값
+                $('.scrollTop').text(location)
+
+                // if(){}else{}  //>= 부등호 위치 주의하기
+                if (location >= 600) {
+                    $('.q-menu').fadeIn()
+                } else {
+                    $('.q-menu').fadeOut()
+                }
+
+                if (location > 0){
+                    $('header').addClass('on')
+                } else{
+                    $('header').removeClass('on')
+                }
+
+                if (location >= $('.Section03').offset().top - 300){ //<< .Section03을 인식하려면 .offset().top이 필요함
+                    $('.Section03').addClass('on')
+                }
+
+                if (location >= $('.Section04').offset().top){
+                    $('.Section04').addClass('on')
+                }else{
+                    $('.Section04').removeClass('on')
+                }
+            })
+
+        })
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <nav>
+                <h1><a href="#">LOGO</a></h1>
+                <!-- ul>li*4[href="#"]{main05} -->
+
+                <ul>
+                    <li href="#">main01</li>
+                    <li href="#">main02</li>
+                    <li href="#">main03</li>
+                    <li href="#">main04</li>
+                </ul>
+            </nav>
+        </header>
+        <section class="Section01"></section>
+        <section class="Section02"></section>
+        <section class="Section03">
+            <h3>SECTION 03</h3>
+            <p>나는 내용내용내용</p>
+        </section>
+        <section class="Section04"></section>
+        <footer></footer>
+        <div class="q-menu">바로가기</div>
+        <b>
+            scrollTop :<span class="scrollTop">0</span>
+        </b>
+    </div>
+</body>
+
+</html>
